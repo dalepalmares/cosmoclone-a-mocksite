@@ -1,0 +1,302 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --color2: #80c9dd;
+  --color3: #d5eaf0;
+  --color1: #62bbd3;
+  --color2-1: #fff;
+}
+
+.bg-pattern {
+  border-radius: 0.5rem;
+  background-color: var(--color1);
+  background-image: linear-gradient(
+      30deg,
+      var(--color2) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--color2) 87.5%,
+      var(--color2)
+    ),
+    linear-gradient(
+      150deg,
+      var(--color2) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--color2) 87.5%,
+      var(--color2)
+    ),
+    linear-gradient(
+      30deg,
+      var(--color2) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--color2) 87.5%,
+      var(--color2)
+    ),
+    linear-gradient(
+      150deg,
+      var(--color2) 12%,
+      transparent 12.5%,
+      transparent 87%,
+      var(--color2) 87.5%,
+      var(--color2)
+    ),
+    linear-gradient(
+      60deg,
+      var(--color3) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--color3) 75%,
+      var(--color3)
+    ),
+    linear-gradient(
+      60deg,
+      var(--color3) 25%,
+      transparent 25.5%,
+      transparent 75%,
+      var(--color3) 75%,
+      var(--color3)
+    );
+  background-size: 129px 150px;
+  background-position: 0 0, 0 0, 70px 85px, 70px 85px, 0 0, 70px 85px;
+}
+
+.button {
+  transition: all 300ms ease;
+}
+
+.button:after {
+  content: "→";
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0.2rem;
+  right: 10rem;
+  transition: 300ms;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+.button:hover {
+  padding-right: 2.8rem;
+  padding-left: 1.2rem;
+}
+
+.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+  right: 13.2rem;
+  top: 0.2rem;
+}
+
+.button-2 {
+  transition: all 300ms ease;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 6px 23px 3px rgba(35, 51, 199, 0.3);
+  /* box-shadow: 0px 6px 23px 3px rgba(20, 154, 232, 0.3); */
+}
+
+.button-2:after {
+  content: "→";
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 0.2rem;
+  right: -4rem;
+  transition: 300ms;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+.button-2:hover {
+  padding-right: 3.5rem;
+  padding-left: 1.5rem;
+}
+
+.button-2:hover:after {
+  opacity: 1;
+  visibility: visible;
+  right: 0.6rem;
+  top: 0.2rem;
+}
+
+.first-shape {
+  top: -2.5rem;
+  left: 4rem;
+  animation: rotate 10s linear infinite;
+}
+
+.second-shape {
+  top: 25rem;
+  left: 10rem;
+  animation: rotate 6s linear infinite;
+}
+
+.third-shape {
+  top: 23rem;
+  left: 60rem;
+  animation: rotate 8s linear infinite;
+}
+
+.fourth-shape {
+  top: 5rem;
+  left: 72rem;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-shape {
+  top: 15rem;
+  left: 1rem;
+}
+
+.down-arrow-two {
+  top: 0.5rem;
+  right: 1rem;
+}
+
+#services-container {
+  box-shadow: inset 0 -150px 110px -55px rgba(201, 201, 201, 0.4);
+}
+
+#services-button {
+  box-shadow: 0px 15px 42px -14px #205de0;
+}
+
+/* Projects Section */
+.long-line-1 {
+  left: 9rem;
+  z-index: -99;
+}
+.long-line-2 {
+  right: 0%;
+  z-index: -99;
+}
+.gradient-line-1 {
+  left: 23rem;
+  z-index: -99;
+}
+.gradient-line-2 {
+  right: 37%;
+  z-index: -99;
+}
+.gradient-line-3 {
+  right: 22%;
+  z-index: -99;
+}
+.short-line-1 {
+  left: 44%;
+  z-index: -99;
+}
+
+#projects-card-1 {
+  left: -4rem;
+  box-shadow: -70px 70px 80px 0px rgba(67, 58, 122, 0.1);
+  transition: all 250ms linear;
+}
+
+#projects-image-1 {
+  width: 45%;
+  box-shadow: 0px 20px 80px 0px rgba(67, 58, 122, 0.2);
+}
+
+#projects-card-2 {
+  top: 5rem;
+  box-shadow: -70px 70px 80px 0px rgba(67, 58, 122, 0.1);
+  transition: all 250ms linear;
+}
+
+#projects-image-2 {
+  width: 45%;
+  box-shadow: 0px 20px 80px 0px rgba(67, 58, 122, 0.2);
+}
+
+#projects-button {
+  box-shadow: 0px 15px 42px -14px #7320e0;
+}
+
+.o-icon {
+  top: 1rem;
+  right: 1rem;
+}
+
+/* Quotes Section */
+#quotes-button {
+  box-shadow: 0px 15px 42px -14px #2043e0;
+}
+
+.skeptic-icon {
+  top: 0.9rem;
+  right: 1rem;
+}
+
+.arrow-1 {
+  top: -8rem;
+  left: 39%;
+}
+.arrow-2 {
+  top: -11rem;
+  left: 47%;
+}
+
+.quotes-lines {
+  top: -3rem;
+  left: 30%;
+}
+
+#moon {
+  width: 43%;
+  right: 0;
+  top: -15rem;
+}
+
+#typing {
+  right: 11.1rem;
+}
+
+/* Contact Section */
+#contact-card {
+  box-shadow: 0px 15px 80px -6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button {
+  transition: all 300ms ease;
+  color: rgba(255, 255, 255, 1);
+}
+
+.contact-button:after {
+  content: "→";
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 34.1rem;
+  right: 30.6rem;
+  transition: 300ms;
+  font-size: 2.5rem;
+  pointer-events: none;
+}
+
+.contact-button:hover {
+  padding-right: 2.8rem;
+  padding-left: 1.2rem;
+}
+
+.contact-button:hover:after {
+  opacity: 1;
+  visibility: visible;
+  right: 34.2rem;
+  top: 34.1rem;
+}
