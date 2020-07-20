@@ -72,13 +72,14 @@
 
 .button:after {
   content: "→";
+  font-family: "Noto Sans JP", sans-serif;
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  top: 0.2rem;
+  top: 1.3rem;
   right: 10rem;
   transition: 300ms;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   pointer-events: none;
 }
 
@@ -90,8 +91,8 @@
 .button:hover:after {
   opacity: 1;
   visibility: visible;
-  right: 13.2rem;
-  top: 0.2rem;
+  right: 13.8rem;
+  top: 1.3rem;
 }
 
 .button-2 {
@@ -103,13 +104,14 @@
 
 .button-2:after {
   content: "→";
+  font-family: "Noto Sans JP", sans-serif;
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  top: 0.2rem;
+  top: 1.3rem;
   right: -4rem;
   transition: 300ms;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   pointer-events: none;
 }
 
@@ -121,8 +123,8 @@
 .button-2:hover:after {
   opacity: 1;
   visibility: visible;
-  right: 0.6rem;
-  top: 0.2rem;
+  right: 1rem;
+  top: 1.3rem;
 }
 
 .first-shape {
@@ -245,16 +247,16 @@
 
 .arrow-1 {
   top: -8rem;
-  left: 39%;
+  left: 41%;
 }
 .arrow-2 {
   top: -11rem;
-  left: 47%;
+  left: 51%;
 }
 
 .quotes-lines {
   top: -3rem;
-  left: 30%;
+  left: 31%;
 }
 
 #moon {
@@ -264,7 +266,7 @@
 }
 
 #typing {
-  right: 11.1rem;
+  right: 6.7rem;
 }
 
 /* Contact Section */
@@ -279,13 +281,14 @@
 
 .contact-button:after {
   content: "→";
+  font-family: "Noto Sans JP", sans-serif;
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  top: 34.1rem;
-  right: 30.6rem;
+  top: 0.5rem;
+  right: -2rem;
   transition: 300ms;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   pointer-events: none;
 }
 
@@ -297,6 +300,6 @@
 .contact-button:hover:after {
   opacity: 1;
   visibility: visible;
-  right: 34.2rem;
-  top: 34.1rem;
+  right: 0.6rem;
+  top: 0.5rem;
 }
